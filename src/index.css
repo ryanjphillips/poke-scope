@@ -1,13 +1,174 @@
-body {
+@font-face {
+  font-family: pokemonGen1;
+  src: url(pokeclassic.ttf);
+
+}
+@font-face{
+  font-family: pokemonMainTheme;
+  src: url(pokemonhollow.ttf)
+}
+body, html{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+* {
+  font-family: pokemonGen1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div#nav-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  height: 60px;
+  border: black 1px solid;
+  background-color:lightgray;
+}
+
+div#root{
+  width: 100%;
+  height: 100%;
+}
+
+div.root{
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  z-index: 1;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+
+div > ul{
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  padding-top: 20px;
+}
+
+ul#main-title{
+  flex: 2;
+  font-size: 25px;
+  border-right: solid black 1px;
+  border-radius: 10px;
+  border-left: solid black 1px;
+}
+
+div#main-class{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div#main-class > div{
+  width: 100%;
+  height: 100%;
+}
+
+
+div.sides{
+  background-color: darkgray;
+  flex: 1;
+  border-radius: 5px;
+}
+
+div#top-div{
+  width: 100%;
+  height: 75px;
+  border-right: black 1px solid;
+  border-left: black 1px solid;
+  background-color: darkgray;
+  display: flex;
+}
+
+div#first-strip{
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+}
+div#descr{
+  width: 100%;
+  height: 100%;
+  flex: 3;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+}
+
+p#gamebody-descr{
+  color: white;
+}
+
+div#third-section{
+  width: 100%;
+  height: 100%;
+  flex: .68;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+div#left-div{
+  flex: 1.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div#main-div{
+  flex: 6;
+  border: black 1px solid;
+  background-color: #949e27;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+div#circle-div{
+  height: 120px;
+  width: 120px;
+  border: black solid .5px;
+  border-radius: 60px;
+  background-color: lightcoral;
+}
+
+div.purple-strip{
+  height: 25%;
+  width: 100%;
+  background-color: #38223C;
+  border: .1px solid black;
+  border-radius: 1px;
+  margin-top: 10px;
+}
+
+div.navy-strip{
+  height: 25%;
+  width: 100%;
+  background-color: #0E1122;
+  margin-top: 15px;
+}
+
+
+p#title{
+  font-family: pokemonMainTheme;
+  font-size: 150px;
+}
+
+p#describe-title{
+  font-family: pokemonMainTheme;
+  font-size: 25px;
 }
