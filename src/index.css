@@ -3,26 +3,34 @@
   src: url(pokeclassic.ttf);
 
 }
+
 @font-face{
   font-family: pokemonMainTheme;
   src: url(pokemonhollow.ttf)
 }
-body, html{
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
+
 * {
   font-family: pokemonGen1;
 }
 
+a.selection-item{
+  text-decoration: underline      ;
+  color: black;
+}
+
+body, html{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+}
+
 div#nav-container{
-  display: flex;
-  flex-direction: row;
   margin: 0px;
   height: 60px;
   border: black 1px solid;
   background-color:lightgray;
+  position: relative;
 }
 
 div#root{
@@ -35,58 +43,19 @@ div.root{
   height: 100%;
 }
 
-nav{
-  z-index: 1;
-}
-main{
-  width: 100%;
-  height: 100%;
-}
-
-div > ul{
-  margin: 0;
-  flex: 1;
-  text-align: center;
-  padding-top: 20px;
-}
-
-ul#main-title{
-  flex: 2;
-  font-size: 25px;
-  border-right: solid black 1px;
-  border-radius: 10px;
-  border-left: solid black 1px;
-}
-
-div#main-class{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-div#main-class > div{
-  width: 100%;
-  height: 100%;
-}
-
-
 div.sides{
   background-color: darkgray;
   flex: 1;
-  border-radius: 5px;
 }
 
-div#top-div{
+div#transition-div{
   width: 100%;
   height: 75px;
-  border-right: black 1px solid;
-  border-left: black 1px solid;
   background-color: darkgray;
   display: flex;
 }
 
-div#first-strip{
+div#first-section{
   width: 100%;
   height: 100%;
   flex: 2;
@@ -94,6 +63,7 @@ div#first-strip{
   display: flex;
   flex-direction: column;
 }
+
 div#descr{
   width: 100%;
   height: 100%;
@@ -105,8 +75,16 @@ div#descr{
   align-items: center;
 }
 
-p#gamebody-descr{
-  color: white;
+div#main-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div#main-body > div{
+  width: 100%;
+  height: 100%;
 }
 
 div#third-section{
@@ -136,8 +114,6 @@ div#main-div{
   align-items: center;
 }
 
-
-
 div#circle-div{
   height: 120px;
   width: 120px;
@@ -148,27 +124,321 @@ div#circle-div{
 
 div.purple-strip{
   height: 25%;
-  width: 100%;
+  width: 98%;
   background-color: #38223C;
   border: .1px solid black;
-  border-radius: 1px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
 div.navy-strip{
   height: 25%;
-  width: 100%;
+  width: 98%;
   background-color: #0E1122;
   margin-top: 15px;
+  border: black solid 1px;
+  border-radius: 10px;
 }
 
+div#selection-div{
+  padding-right: 100px;
+  padding-left: 100px;
+  border: 3px dashed black
+}
+
+li#main-title{
+  flex: 2;
+  font-size: 25px;
+  border-right: solid black 1px;
+  border-radius: 10px;
+  border-left: solid black 1px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+p#gamebody-descr{
+  color: white;
+}
 
 p#title{
   font-family: pokemonMainTheme;
   font-size: 150px;
+  margin: 20px;
 }
 
 p#describe-title{
   font-family: pokemonMainTheme;
   font-size: 25px;
+}
+
+ul > li{
+  margin: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+ul#navbar-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+article{
+  width: 100%;
+  height: 100%;
+  background-color: darkgray;
+}
+
+div#section-div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div#section-left-div{
+  flex: 1.51;
+  background-color:darkgray;
+  position: relative;
+  display: flex;
+}
+
+div#section-middle-div{
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+div#section-right-div{
+  flex: .99;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+div#section-div > div {
+  width: 100%;
+  height: 100%;
+}
+
+div#under-screen-title{
+  flex: 1;
+  text-align: left;
+  background-color: darkgray;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+div#welcome-section{
+  flex: 1;
+  background-color: darkgray;
+  border: black double 3px;
+  border-right: black double 3px;
+  width: 99.6%;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+div#get-started{
+  flex: 1;
+  background-color: darkgray;
+  border: black double 3px;
+  width: 99.6%;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+div#current-support{
+  flex: 1;
+  background-color: darkgray;
+  border: black double 3px;
+  width: 99.6%;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+span#gameboy-title{
+  font-size: 30px;
+}
+
+span#tm-span{
+  font-size: 10px;
+}
+
+div#up-div{
+  position: absolute;
+  background-color: black;
+  height: 250px;
+  width: 100px;
+  left: 24%;
+  top: 50%;
+}
+
+
+div#across-div{
+  position: absolute;
+  background-color: black;
+  height: 250px;
+  width: 100px;
+  left: 24%;
+  top: 50%;
+  transform: rotate(90deg);
+}
+
+p.about-section-text{
+  padding-left: 200px;
+}
+
+h1.about-section-heading{
+  padding-left: 20px;
+}
+
+div#gameboybutton-div{
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+div#select-button{
+  flex:1;
+  background-color: darkgray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+div#skewed-div-1{
+  background-color: grey;
+  height: 150px;
+  width: 50px;
+  border: black solid 1px;
+  border-radius: 30px;
+  transform: skew(-45deg, 45deg);
+  margin-right: 10px;
+}
+
+
+div#start-button{
+  flex:1;
+  background-color: darkgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div#skewed-div-2{
+  background-color: grey;
+  height: 150px;
+  width: 50px;
+  border: black solid 1px;
+  border-radius: 30px;
+  transform: skew(-45deg, 45deg);
+  margin-left: 100px;
+}
+
+p#skewde-desc-2{
+  transform: skew(45deg, -45deg);
+  padding-left: 5px;
+}
+
+p#skewde-desc-1{
+  transform: skew(45deg, -45deg);
+  padding-right: 5px;
+}
+
+div#footer-div{
+  width: 100%;
+  height: 400px;
+  background-color: darkgray;
+  border-radius: 0px 0px 100px 0px;
+  display: flex;
+}
+
+div#info-text{
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+ul#info-list{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  list-style-type: square;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+ul#info-list > li {
+  flex: 1;
+} 
+
+div#exhaust-div{
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+div#exhaust-div > div{
+  flex: .10;
+  height: 300px;
+  background-color: gray;
+  border: black solid 1px;
+  border-radius: 50px;
+  transform: rotate(-40deg);
+  margin-left: 100px;
+
+}
+
+div#under-button{
+  background-color: grey;
+  height: 500px;
+  border: black 1px solid;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+div#a-button{
+  flex: 1;
+  background-color: #730E33;
+  border: 1px solid black;
+  border-radius: 300px;
+
+}
+
+div#b-button{
+  flex: 1;
+  background-color: #730E33;
+  border: 1px solid black;
+  border-radius: 300px;
+}
+
+li > button {
+  font-size: 20px;
+}
+
+div#options-div{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  background-color: darkgray;
 }
