@@ -9,8 +9,24 @@ const Footer = () => {
             <div id="footer-div">
                 <div id="info-text">
                     <ul id="info-list">
-                        <li><a href="www.test.com" rel="noreferrer" target="_blank"> My Github</a><ImGithub style={{color: 'black'}} /></li>
-                        <li><a href="https://pokeapi.co/" rel="noreferrer" target="_blank"> RESTFul Pokemon API<CgPokemon style={{color: 'black'}} /></a></li>
+                        <li>
+                            <a className="footer-links"
+                               href="https://github.com/ryanjphillips" 
+                               rel="noreferrer" 
+                               target="_blank"> 
+                               My Github
+                            </a><ImGithub style={{color: 'black'}} />
+                        </li>
+                        <li>
+                            <a
+                               className="footer-links" 
+                               href="https://pokeapi.co/" 
+                               rel="noreferrer" 
+                               target="_blank"> 
+                                RESTFul Pokemon API
+                                <CgPokemon style={{color: 'black'}} />
+                            </a>
+                        </li>
                     </ul>
                 </div>
 

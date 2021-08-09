@@ -245,7 +245,7 @@ div#welcome-section{
   border-right: black double 3px;
   width: 99.6%;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-bottom: 5px;
 }
 div#get-started{
@@ -254,7 +254,7 @@ div#get-started{
   border: black double 3px;
   width: 99.6%;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-bottom: 5px;
 }
 div#current-support{
@@ -263,7 +263,7 @@ div#current-support{
   border: black double 3px;
   width: 99.6%;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-bottom: 5px;
 }
 
@@ -278,9 +278,9 @@ span#tm-span{
 div#up-div{
   position: absolute;
   background-color: black;
-  height: 250px;
-  width: 100px;
-  left: 24%;
+  height: 300px;
+  width: 115px;
+  left: 35%;
   top: 50%;
 }
 
@@ -288,9 +288,9 @@ div#up-div{
 div#across-div{
   position: absolute;
   background-color: black;
-  height: 250px;
-  width: 100px;
-  left: 24%;
+  height: 300px;
+  width: 115px;
+  left: 35%;
   top: 50%;
   transform: rotate(90deg);
 }
@@ -435,10 +435,46 @@ li > button {
 }
 
 div#options-div{
-  height: 100px;
-  width: 100px;
+  border:black 1px solid;
+  border-radius: 10px 0px 10px 10px;
+  height: 375px;
+  width: 300px;
   position: absolute;
-  left: 75%;
-  top: 10%;
-  background-color: darkgray;
+  left: 75.5%;
+  top: 80%;
+  background-color: gray;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul#options-list-one{
+
+  list-style-type: square;
+  margin: 0px;
+}
+a.navlist-links{
+  color: black;
+}
+
+ul#options-list-two{
+  list-style-type: square;
+}
+
+h6.options-header{
+  padding-left: 10px;
+  text-decoration: underline;
+}
+
+a.navlist-links:hover{
+  color: white;
+  background-color: lightcoral;
+}
+
+a.footer-links{
+  color: black;
+}
+
+a.footer-links:hover{
+  color: white;
+  background-color: lightcoral;
 }

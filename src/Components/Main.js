@@ -25,7 +25,7 @@ const Main = () => {
                 <div id="main-div">
                     <p id="title">PokeScope</p>
                     <p id="describe-title">
-                       ...Your Personal Pokemon Tracker!</p>
+                       ...Your Personal Pokedex!</p>
                     <div id="selection-div">
                         <p id="getting-started">---Get Started!---</p>
                         <ul id="selection-list">
